@@ -37,9 +37,12 @@ body {
 }
 
 .promo {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(134, 119, 147);
     background-image: url(../img/bg-promo.png);
-    background-size: 100%;
-    background-position: 0 0;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     padding-top: 41px;
     padding-bottom: 71px;
@@ -79,4 +82,14 @@ p.scroll {
     letter-spacing: 4px;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    h1 {
+        font-size: 45px;
+    }
 }
