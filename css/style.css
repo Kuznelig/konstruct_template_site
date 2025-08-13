@@ -36,6 +36,7 @@ body {
     margin: 0 auto;
 }
 
+/* Promo */
 .promo {
     max-width: 1440px;
     margin: 0 auto;
@@ -44,6 +45,10 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+}
+
+.container-promo {
     padding-top: 41px;
     padding-bottom: 71px;
 }
@@ -76,7 +81,7 @@ p.promo-text {
 }
 
 p.scroll {
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     font-size: 11px;
     line-height: 11px;
     letter-spacing: 4px;
@@ -84,12 +89,79 @@ p.scroll {
     text-transform: uppercase;
 }
 
+/* Navbar */
+.navbar {
+    padding-top: 24px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* .navbar-logo img {
+    width: 80px;
+    height: 18px;
+} */
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    width: 410px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list-item a {
+    display: block;
+    color: #48555B;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1.09px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-list-item a.active {
+    color: #00A4E5;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1290px) {
+    .navbar {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .promo {
         padding-right: 25px;
         padding-left: 25px;
     }
+
     h1 {
         font-size: 45px;
+    }
+
+    .container-navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar-logo {
+        margin-right: 100px;
+    }
+
+    .navbar-list {
+        margin-left: auto;
+        justify-content: flex-start;
+        gap: 30px;
     }
 }
